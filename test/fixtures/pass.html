@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en-us" data-reactroot="" data-reactid="1" data-react-checksum="1443206786">
+
+<head data-reactid="2">
+    <meta charset="utf-8" data-reactid="3" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" data-reactid="4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" data-reactid="5" />
+    <title data-react-helmet="true" data-reactid="6">RentSpree Online Rental Application and Tenant Verification</title>
+    <meta data-react-helmet="true" name="description" content="RentSpree&#x27;s nationwide online rental application and tenant verification platform streamlines the lease application process for real estate agents/landlords." data-reactid="7" />
+    <meta data-react-helmet="true" name="keywords" content="Online Rental Application, Tenant Verification" data-reactid="8" />
+    <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" data-reactid="9" />
+    <meta data-react-helmet="true" name="robots" content="noodp" data-reactid="10" />
+    <meta data-react-helmet="true" name="twitter:card" content="summary" data-reactid="11" />
+    <meta data-react-helmet="true" name="twitter:description" content="RentSpree&#x27;s nationwide online rental application and tenant verification platform streamlines the lease application process for real estate agents/landlords." data-reactid="12" />
+    <meta data-react-helmet="true" name="twitter:title" content="RentSpree Online Rental Application and Tenant Verification" data-reactid="13" />
+    <meta data-react-helmet="true" name="twitter:site" content="@rent_spree" data-reactid="14" />
+    <meta data-react-helmet="true" name="twitter:image" content="http://i2.wp.com/www.rentspree.com/wp-content/uploads/2015/04/logo-ver8.jpg?fit=300%2C300" data-reactid="15" />
+    <meta data-react-helmet="true" name="twitter:creator" content="@rent_spree" data-reactid="16" />
+    <meta data-react-helmet="true" name="p:domain_verify" content="374081a009d677b35760bbec151882cc" data-reactid="17" />
+    <meta data-react-helmet="true" name="msvalidate.01" content="DC7979990505216C812B1BF7695497A3" data-reactid="18" />
+    <meta data-react-helmet="true" property="og:locale" content="en_US" data-reactid="19" />
+    <meta data-react-helmet="true" property="og:locale:alternate" content="zh_CN" data-reactid="20" />
+    <meta data-react-helmet="true" property="og:type" content="website" data-reactid="21" />
+    <meta data-react-helmet="true" property="og:title" content="RentSpree Online Rental Application and Tenant Verification" data-reactid="22" />
+    <meta data-react-helmet="true" property="og:description" content="RentSpree&#x27;s nationwide online rental application and tenant verification platform streamlines the lease application process for real estate agents/landlords." data-reactid="23" />
+    <meta data-react-helmet="true" property="og:url" content="https://www.rentspree.com/" data-reactid="24" />
+    <meta data-react-helmet="true" property="og:site_name" content="RentSpree" data-reactid="25" />
+    <meta data-react-helmet="true" property="og:image" content="http://i2.wp.com/www.rentspree.com/wp-content/uploads/2015/04/logo-ver8.jpg?fit=300%2C300" data-reactid="26" />
+    <meta data-react-helmet="true" property="og:image:width" content="300" data-reactid="27" />
+    <meta data-react-helmet="true" property="og:image:height" content="300" data-reactid="28" />
+    <link data-react-helmet="true" rel="canonical" href="https://www.rentspree.com" data-reactid="29" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" data-reactid="30" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" data-reactid="31" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" data-reactid="32" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" data-reactid="33" />
+    <link href="/dist/main-291caad774a9dc7338dc.css" media="screen" rel="stylesheet" type="text/css" charset="UTF-8" data-reactid="34" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" data-reactid="35" />
+</head>
+
+<body data-reactid="36">
+    <div id="content" data-reactid="37">
+        <div data-reactroot="" data-reactid="1" data-react-checksum="-616126133">
+            <div class="nav___CJil2" data-reactid="2">
+                <div class="container" data-reactid="3"><span class="nav-left___24EDh" data-reactid="4"><a id="navDesktopHome" href="/" data-reactid="5"><img class="rentspree-logo___3jVRo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbgAAAB7CAMAAAAxH2UvAAAAq1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Nr6iZAAAAOHRSTlMA8O7z5d7o2p9U1QhmyfnRxfUbYXAV4qTNaVi7teurBG0PjXqxhltDMCbLf7+adUcf15NRSzw1LHqDQ1sAAA5sSURBVHja7Nvpdqo6GIDhjxCIoowyOYAFxQHnOfd/ZafdS8sQQDxn//Asef51b4tdeRsIwUKj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go3G+7IuM3O77Z9vY2j8b1i7aC3SHzrxzabd/0RPU2gG3iyg8eY6kUALrM/QeGdbTEv4zax7X8shrbCFxns60WrDDjTe0IQ+QyxovJ0tfU7cQ+PNmLQO9KZz7jJ/MOCznGg9BN7R+GOXUAaty4E3NBbpQx8+CqEFWgotMID3M8b0oQufZEULTOBKC+hveBX51HAWLRACwE6hLB/ezqeG21DWCr4Vz7kbvJsPDbekLBPgUU4LwzVNW8O7+dBwx6p9yRs9MjcLb3cz96HhRJrXh8TABOjmL39v5jPDzWheD3L6NEOAN/OZ4YY0ZwZsuKx327L8zHA2zToBY/Luj+aE1E//KfY0qw2sG6G11pWL8+6P8w3ujK+j47cCyJpvQ2cYu9q0FX7doMDtcaBlcmwzdEayu/bDbgcSne9XzXcefTjOv7+ez3cLKLQ8db9Ms989LeGZxeD7pf3ePPgvg3vudbvdXvsGzwWXQe9b+9qBWno041x80Gw5bgyFNHo3vQ9TqNAfBqRcV9mDaX0D8nx6t7kPgCnThPj1fJdVA9bFnBKOQxxCHBJG2znkzGPfelQzpzb/80Lek6PiMVkNR2Hyrf3NSD1Cxq3rSIhHCHFc7t1YwSmUMcf9vNbWolPn5ZuBssN3SJ2L3IjeOZnfCcWCX4spZSirALI2mQVsZ8VkCZ6FG7GTzUG8KGDEc981BII5brTLL9Ow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" alt="Rentspree Logo" data-reactid="6"/></a><span class="nav-toggle___1eOgA" id="navMobileHamburger" data-reactid="7"><span class="nav-hamburger___2TMQa" data-reactid="8"><span class="icon-bar___3ptG7" data-reactid="9"></span><span class="icon-bar___3ptG7" data-reactid="10"></span><span class="icon-bar___3ptG7" data-reactid="11"></span></span><span class="nav-toggle-text___1QWDk" data-reactid="12">Menu</span></span>
+                    </span><span class="nav-center___3DAMn" data-reactid="13"><span class="nav-item___2xHsq" id="navDesktopBusiness" data-reactid="14"><!-- react-text: 15 -->BUSINESS<!-- /react-text --><span class="arrow-icon___23BIH" data-reactid="16"><i class="icon-arrow-down___3B0Vg" data-reactid="17"></i></span></span><a class="nav-item___2xHsq" href="https://www.rentspree.com/blog" id="navDesktopBlog" data-reactid="18">BLOG</a><a class="nav-item___2xHsq" href="https://support.rentspree.com" id="navDesktopHelp" target="_blank" data-reactid="19">HELP</a><a class="nav-item___2xHsq" id="navDesktopScreenTenants" href="/agent" data-reactid="20">SCREEN TENANTS</a></span>
+                    <div class="nav-right___-Nwtr" data-reactid="21"><span data-reactid="22"></span></div>
+                    <div class="nav-dropdown___PBXg4" data-reactid="23"><i class="nav-dropdown-close___2G7ik icon-close___1EVum" data-reactid="24"></i><a class="nav-dropdown-item___Bu6G2" id="navDesktopBusinessAgent" href="/agent" data-reactid="25"><i class="image___3mxDu icon-people___3k7UV" data-reactid="26"></i><div class="title___3431u" data-reactid="27"><!-- react-text: 28 -->For real estate<!-- /react-text --><br data-reactid="29"/><!-- react-text: 30 -->agents<!-- /react-text --></div><p class="desc___3z3Hu" data-reactid="31">Streamline the leasing process with RentSpree&#x27;s tenant screening and application collection</p></a><a class="nav-dropdown-item___Bu6G2" id="navDesktopBusinessBrokerage" href="/brokerage" data-reactid="32"><i class="image___3mxDu icon-briefcase___2eiS7" data-reactid="33"></i><div class="title___3431u" data-reactid="34"><!-- react-text: 35 -->For real estate<!-- /react-text --><br data-reactid="36"/><!-- react-text: 37 -->brokerages<!-- /react-text --></div><p class="desc___3z3Hu" data-reactid="38">Give your agents access to RentSpree&#x27;s tenant verification tool to save them time and increase productivity</p></a><a class="nav-dropdown-item___Bu6G2" id="navDesktopBusinessAssociation" href="/realtor-association" data-reactid="39"><i class="image___3mxDu icon-globe___3V4OE" data-reactid="40"></i><div class="title___3431u" data-reactid="41"><!-- react-text: 42 -->For local &amp; state<!-- /react-text --><br data-reactid="43"/><!-- react-text: 44 -->associations<!-- /react-text --></div><p class="desc___3z3Hu" data-reactid="45">Enhance your member benefits with RentSpree</p></a><a class="nav-dropdown-item___Bu6G2" id="navDesktopBusinessMLSTransactional" href="/mls-transactional-software" data-reactid="46"><i class="image___3mxDu icon-credit-card___1SE_X" data-reactid="47"></i><div class="title___3431u" data-reactid="48"><!-- react-text: 49 -->For MLS &amp; transactional<!-- /react-text --><br data-reactid="50"/><!-- react-text: 51 -->software<!-- /react-text --></div><p class="desc___3z3Hu" data-reactid="52">Allow your clients to screen tenants and collect applications directly through your software</p></a><a class="nav-dropdown-item___Bu6G2" id="navDesktopBusinessListingSites" href="/listing-sites" data-reactid="53"><i class="image___3mxDu icon-screen-desktop___37Q27" data-reactid="54"></i><div class="title___3431u" data-reactid="55"><!-- react-text: 56 -->For listing<!-- /react-text --><br data-reactid="57"/><!-- react-text: 58 -->websites<!-- /react-text --></div><p class="desc___3z3Hu" data-reactid="59">Add an &quot;Apply Now&quot; button to accept applications and screening reports</p></a></div>
+                    <div class="nav-mobile___2x3kN" data-reactid="60"><span class="nav-mobile-list___ltnfq" data-reactid="61"><a class="nav-mobile-item___1NR81" id="navMobileHome" href="/" data-reactid="62">HOME</a><span class="nav-mobile-item___1NR81" id="navMobileBusiness" data-reactid="63"><!-- react-text: 64 -->BUSINESS <!-- /react-text --><i class="icon-arrow-right___3_k1o" data-reactid="65"></i></span><a class="nav-mobile-item___1NR81" href="https://www.rentspree.com/blog" id="navMobileBlog" data-reactid="66">BLOG</a><a class="nav-mobile-item___1NR81" href="https://support.rentspree.com" id="navMobileHelp" data-reactid="67">HELP</a><a class="nav-mobile-item___1NR81" id="navMobileScreenTenants" href="/agent" data-reactid="68">SCREEN TENANTS</a>
+                        <div class="divider___27QAO" data-reactid="69"></div><span data-reactid="70"><li class="nav-mobile-item___1NR81" data-reactid="71"><a href="/profile/undefined" id="navMobileMyProfile" data-reactid="72">MY PROFILE</a></li><li class="nav-mobile-item___1NR81" data-reactid="73"><a href="/dashboard/request/listings" id="navMobileApplications" data-reactid="74">LEADS &amp; APPLICANTS</a></li><li class="nav-mobile-item___1NR81" id="navMobileLogout" data-reactid="75">LOG OUT</li><div class="divider___27QAO" data-reactid="76"></div><li class="nav-mobile-item___1NR81" id="navMobileSwitch" data-reactid="77"><!-- react-text: 78 -->RENTER<!-- /react-text --><!-- react-text: 79 -->? CLICK HERE<!-- /react-text --></li></span></span><span class="nav-toggle-submenu-list___65-6a" data-reactid="80"><span class="nav-mobile-item___1NR81 back___3YCfn" id="navMobileBusinessBack" data-reactid="81"><i class="icon-arrow-left___hp5ej" data-reactid="82"></i><!-- react-text: 83 --> BACK<!-- /react-text --></span>
+                        <a class="nav-mobile-item___1NR81" id="navMobileBusinessAgent" href="/agent" data-reactid="84">
+                            <p class="title___3431u" data-reactid="85">For real estate agents</p>
+                            <p class="desc___3z3Hu" data-reactid="86">Streamline the leasing process with RentSpree&#x27;s tenant screening and application collection</p>
+                        </a>
+                        <a class="nav-mobile-item___1NR81" id="navMobileBusinessBrokerage" href="/brokerage" data-reactid="87">
+                            <p class="title___3431u" data-reactid="88">For real estate brokerages</p>
+                            <p class="desc___3z3Hu" data-reactid="89">Give your agents access to RentSpree&#x27;s tenant verification tool to save them time and increase productivity</p>
+                        </a>
+                        <a class="nav-mobile-item___1NR81" id="navMobileBusinessAssociation" href="/realtor-association" data-reactid="90">
+                            <p class="title___3431u" data-reactid="91">For local &amp; state associations</p>
+                            <p class="desc___3z3Hu" data-reactid="92">Enhance your member benefits with RentSpree</p>
+                        </a>
+                        <a class="nav-mobile-item___1NR81" id="navMobileBusinessMLSTransactional" href="/mls-transactional-software" data-reactid="93">
+                            <p class="title___3431u" data-reactid="94">For MLS &amp; transactional software</p>
+                            <p class="desc___3z3Hu" data-reactid="95">Allow your clients to screen tenants and collect applications directly through your software</p>
+                        </a>
+                        <a class="nav-mobile-item___1NR81" id="navMobileBusinessListingSites" href="/listing-sites" data-reactid="96">
+                            <p class="title___3431u" data-reactid="97">For Listing websites</p>
+                            <p class="desc___3z3Hu" data-reactid="98">Add an &quot;Apply Now&quot; button to accept applications and screening reports</p>
+                        </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mainContainer___30Smu" data-reactid="99">
+                <div data-reactid="100">
+                    <!-- react-empty: 101 -->
+                    <section class="section___3_aGm hero-section___1FQIV have-banner___mDuXh new-home-hero-img___2bTNl" id="hero" data-reactid="102">
+                        <div class="flex-container___k0x5z hero-container___CSDty container" data-reactid="103">
+                            <div class="column___zdbKU col-50___aoKya" data-reactid="104">
+                                <div class="left-panel___mTACd" data-reactid="105">
+                                    <h2 class="title___3teqG" data-reactid="106">Less time verifying tenants = more time closing deals.</h2>
+                                    <p class="lead___2EUN_" data-reactid="107">Agents receive a comprehensive online rental application and tenant verification package in minutes with RentSpree. RentSpree is used nationwide and is trusted by some of the country&#x27;s largest real estate organizations.</p><a href="/dashboard/request/listings" class="button___k-25X _-blue___1IVwh" id="hero-goto-dashboard-btn" data-reactid="108">Sign Up &amp; Collect Applications</a></div>
+                            </div>
+                        </div>
+                        <div class="hero-footer___2U6Xo" data-reactid="109">
+                            <div class="container___2OxSf center___154am container" data-reactid="110">
+                                <h3 class="lead___2EUN_" data-reactid="111">Want to see how RentSpree benefits your business?</h3><a href="/demo" class="button___k-25X _-transparent-black___3iQko _-md___gSSYh" id="hero-request-demo-btn" data-reactid="112">Request a Demo</a></div>
+                        </div><span class="overlay___3cScp show-mobile___1gFZL" data-reactid="113"></span></section>
+                    <section class="section___3_aGm _-hexagon___1vA04" id="icon-columns" data-reactid="114">
+                        <div class="section-header___3axba" data-reactid="115">
+                            <h1 class="title___W8RHV" data-reactid="116">RentSpree&#x27;s online rental application platform.</h1>
+                            <p class="subtitle___WOoLh with-link" data-reactid="117">The tenant verification process takes minutes.</p>
+                        </div>
+                        <div class="flex-container___k0x5z container" data-reactid="118">
+                            <div class="column___zdbKU col-33___2pcsQ" data-reactid="119">
+                                <div class="icon-col___3feMe" data-reactid="120"><img class="icon___18oTp" src="data:image/png;base64,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" alt="1. Request online rental applications" data-reactid="121" />
+                                    <h4 class="title___3WVeu" data-reactid="122">1. Request applications</h4>
+                                    <p class="caption with-link" data-reactid="123">Enter your applicants&#x27; email addresses on RentSpree. Each renter will instantly receive an email to apply.</p>
+                                </div>
+                            </div>
+                            <div class="column___zdbKU col-33___2pcsQ" data-reactid="124">
+                                <div class="icon-col___3feMe" data-reactid="125"><img class="icon___18oTp" src="data:image/png;base64,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" alt="2. Renters apply" data-reactid="126" />
+                                    <h4 class="title___3WVeu" data-reactid="127">2. Renters apply</h4>
+                                    <p class="caption with-link" data-reactid="128">Renters will receive a request to apply to your property. They fill out an online rental application and undergo screening.</p>
+                                </div>
+                            </div>
+                            <div class="column___zdbKU col-33___2pcsQ" data-reactid="129">
+                                <div class="icon-col___3feMe" data-reactid="130"><img class="icon___18oTp" src="data:image/png;base64,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" alt="3. View, Print, and Share" data-reactid="131" />
+                                    <h4 class="title___3WVeu" data-reactid="132">3. View, Print, and Share</h4>
+                                    <p class="caption with-link" data-reactid="133">You can view the completed application and rental history with no additional tenant verification required.</p>
+                                </div>
+                            </div>
+                        </div><span class="triangle___1mPoR white" data-reactid="134"></span></section>
+                    <section class="section___3_aGm _-blue___37CH5" id="package" data-reactid="135">
+                        <div class="flex-container___k0x5z container" data-reactid="136">
+                            <div class="column___zdbKU col-50___aoKya" data-reactid="137">
+                                <div class="panel___V9qjC left-panel" data-reactid="138">
+                                    <h3 class="title___JggbG" data-reactid="139">Faster access to reports and reduced liability</h3>
+                                    <p class="content___1F0f0" data-reactid="140">RentSpree has teamed up with trusted credit bureau TransUnion to give you a complete application and tenant verification package. Each package includes a full online rental application along with a TransUnion credit report, criminal background check, and national eviction report.</p><a href="/renter#benefits" class="link___1mvD9" id="home-whats-include-goto-benefits-btn" data-reactid="141"><strong data-reactid="142">Benefits to your applicants</strong></a></div>
+                            </div>
+                            <div class="column___zdbKU col-50___aoKya" data-reactid="143">
+                                <div class="panel___V9qjC right-panel" data-reactid="144">
+                                    <div class="row" data-reactid="145">
+                                        <div class="col-lg-6 col-md-12" data-reactid="146">
+                                            <h3 class="title___JggbG" data-reactid="147">What&#x27;s Included?</h3>
+                                            <ul class="list___1G_XR" data-reactid="148">
+                                                <li data-reactid="149">Online Rental Application</li>
+                                                <li data-reactid="150">Full TransUnion Credit Report</li>
+                                                <li data-reactid="151">Criminal Background Check</li>
+                                                <li data-reactid="152">National Eviction Report</li>
+                                            </ul><a href="/tenant-verification" class="link___1mvD9" id="home-whats-include-goto-tenant-verification-btn" data-reactid="153"><strong data-reactid="154">Learn more</strong></a></div>
+                                        <div class="credits-image-div___1tVCc col-lg-6 hidden-md col-sm-12 hidden-sm hidden-xs" data-reactid="155"><img src="data:image/png;base64,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" alt="What&#x27;s included in rental application" class="credits-image___2Fps-" data-reactid="156" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section___3_aGm _-grey___1mybE" id="testimonials" data-reactid="157">
+                        <div class="container" data-reactid="158">
+                            <div class="section-header___3axba undefined" data-reactid="159">
+                                <h2 class="title___W8RHV" data-reactid="160">You&#x27;re in great company.</h2></div>
+                            <div class="slider-container___2Fn2a" data-reactid="161"></div>
+                        </div>
+                    </section>
+                    <section class="section___3_aGm _-white___9DpNQ" id="clients" data-reactid="162">
+                        <div class="flex-container___k0x5z container" data-reactid="163">
+                            <div class="column___zdbKU col-50___aoKya" data-reactid="164">
+                                <div class="section-header___3axba _-left___aF0EU" data-reactid="165">
+                                    <h2 class="title___W8RHV" data-reactid="166">Our Clients</h2></div>
+                                <p class="content___UQ6BD with-link" data-reactid="167">We have partnered with some of the most trusted names in real estate, including the California Regional Multiple Listings Service, the largest MLS in the U.S., ziplogix™, the largest forms platform in the U.S. and various state and local REALTOR® associations.</p>
+                            </div>
+                            <div class="column___zdbKU col-50___aoKya" data-reactid="168">
+                                <div class="slider-container___29KOw slick-single___xfuyz" id="partners" data-reactid="169"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="imageBackdrop___1SxK_" data-reactid="170">
+                <section class="footerPanel___2qhV8" data-reactid="171">
+                    <div class="container" data-reactid="172">
+                        <div class="row" data-reactid="173">
+                            <div class="col-sm-6 col-xs-12" data-reactid="174">
+                                <div class="footerLogo___2Cchj" data-reactid="175">
+                                    <a id="footerLogo" href="/" data-reactid="176"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbgAAAB7CAMAAAAxH2UvAAAAq1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Nr6iZAAAAOHRSTlMA8O7z5d7o2p9U1QhmyfnRxfUbYXAV4qTNaVi7teurBG0PjXqxhltDMCbLf7+adUcf15NRSzw1LHqDQ1sAAA5sSURBVHja7Nvpdqo6GIDhjxCIoowyOYAFxQHnOfd/ZafdS8sQQDxn//Asef51b4tdeRsIwUKj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go3G+7IuM3O77Z9vY2j8b1i7aC3SHzrxzabd/0RPU2gG3iyg8eY6kUALrM/QeGdbTEv4zax7X8shrbCFxns60WrDDjTe0IQ+QyxovJ0tfU7cQ+PNmLQO9KZz7jJ/MOCznGg9BN7R+GOXUAaty4E3NBbpQx8+CqEFWgotMID3M8b0oQufZEULTOBKC+hveBX51HAWLRACwE6hLB/ezqeG21DWCr4Vz7kbvJsPDbekLBPgUU4LwzVNW8O7+dBwx6p9yRs9MjcLb3cz96HhRJrXh8TABOjmL39v5jPDzWheD3L6NEOAN/OZ4YY0ZwZsuKx327L8zHA2zToBY/Luj+aE1E//KfY0qw2sG6G11pWL8+6P8w3ujK+j47cCyJpvQ2cYu9q0FX7doMDtcaBlcmwzdEayu/bDbgcSne9XzXcefTjOv7+ez3cLKLQ8db9Ms989LeGZxeD7pf3ePPgvg3vudbvdXvsGzwWXQe9b+9qBWno041x80Gw5bgyFNHo3vQ9TqNAfBqRcV9mDaX0D8nx6t7kPgCnThPj1fJdVA9bFnBKOQxxCHBJG2znkzGPfelQzpzb/80Lek6PiMVkNR2Hyrf3NSD1Cxq3rSIhHCHFc7t1YwSmUMcf9vNbWolPn5ZuBssN3SJ2L3IjeOZnfCcWCX4spZSirALI2mQVsZ8VkCZ6FG7GTzUG8KGDEc981BII5brTLL9Ow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" alt="Rentspree Logo" data-reactid="177" /></a>
+                                </div>
+                                <ul class="footerNav___aXhHn" data-reactid="178">
+                                    <li class="footerNavTitle___2K6P6" data-reactid="179">ABOUT US</li>
+                                    <li class="footerNavItem___1fEoF" data-reactid="180"><a id="footerAboutBtn" href="/about" data-reactid="181">About</a></li>
+                                    <li class="footerNavItem___1fEoF" data-reactid="182"><a id="footerPressBtn" href="http://pr.rentspree.com" target="_blank" data-reactid="183">Press</a></li>
+                                    <li class="footerNavItem___1fEoF" data-reactid="184"><a id="footerFaqBtn" href="https://support.rentspree.com" data-reactid="185">Help</a></li>
+                                </ul>
+                                <ul class="footerNav___aXhHn" data-reactid="186">
+                                    <li class="footerNavTitle___2K6P6" data-reactid="187">RESOURCES</li>
+                                    <li class="footerNavItem___1fEoF" data-reactid="188"><a id="footerScreenTenantBtn" href="/agent" target="_blank" data-reactid="189">Screen Tenants</a></li>
+                                    <li class="footerNavItem___1fEoF" data-reactid="190"><a id="footerBlogBtn" href="https://www.rentspree.com/blog" target="_blank" data-reactid="191">Blog</a></li>
+                                    <li class="footerNavItem___1fEoF" data-reactid="192"><a id="footerSitemapBtn" href="/sitemap" data-reactid="193">Sitemap</a></li>
+                                </ul>
+                                <ul class="footerNav___aXhHn" data-reactid="194">
+                                    <li class="footerNavTitle___2K6P6" data-reactid="195">TALK TO US</li>
+                                    <li class="footerNavItem___1fEoF" data-reactid="196"><a id="footerDemoBtn" href="/demo" data-reactid="197">Demo</a></li>
+                                    <li class="footerNavItem___1fEoF" data-reactid="198"><a id="footerContactUsBtn" href="/contact-us" data-reactid="199">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-xs-12" data-reactid="200">
+                                <div class="footerSection" data-reactid="201">
+                                    <div class="contactTitle___fTGp9" data-reactid="202">Contact Us</div>
+                                    <div class="contactWrap___gRztG" data-reactid="203"><i class="icon-phone___2hwie contactIcon___1u29j" data-reactid="204"></i><span class="contactText___3fpUY" data-reactid="205">323.515.7757</span></div>
+                                    <div class="contactWrap___gRztG" data-reactid="206"><i class="icon-envelope___2Izfj contactIcon___1u29j" data-reactid="207"></i><span class="contactText___3fpUY" data-reactid="208"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4b383e3b3b24393f0b392e253f383b392e2e65282426">[email&#160;protected]</a></span></div>
+                                </div>
+                                <div class="footerSection" data-reactid="209">
+                                    <div class="contactTitle___fTGp9" data-reactid="210">Follow Us</div>
+                                    <div class="hi-icon-wrap___1SLut hi-icon-effect-5___JFOFY hi-icon-effect-5d___32peL socialIconWrap___31COA" data-reactid="211">
+                                        <a id="footerFacebookBtn" target="_blank" href="https://www.facebook.com/rentspree" class="hi-icon___2hEQV icon-social-facebook___cEzpq socialIcon___3yePd socialFacebook___2YZsn" data-reactid="212"></a>
+                                        <a id="footerTwitterBtn" target="_blank" href="https://twitter.com/rent_spree" class="hi-icon___2hEQV icon-social-twitter___1RJqi socialIcon___3yePd socialTwitter___tKcUp" data-reactid="213"></a>
+                                        <a id="footerLinkedInBtn" target="_blank" href="https://www.linkedin.com/company/rentspree" class="hi-icon___2hEQV icon-social-linkedin___3mQZB socialIcon___3yePd socialLinkedIn___3guP2" data-reactid="214"></a>
+                                        <a id="footerInstagramBtn" target="_blank" href="https://www.instagram.com/rentspree/" class="hi-icon___2hEQV icon-social-instagram___K5HRE socialIcon___3yePd socialInstagram___2TwRz" data-reactid="215"></a>
+                                        <a id="footerGoogleBtn" target="_blank" href="https://plus.google.com/+rentspree" class="hi-icon___2hEQV icon-social-google___1ATZt socialIcon___3yePd socialGoogle___3lnjR" data-reactid="216"></a>
+                                        <a id="footerPinterestBtn" target="_blank" href="https://www.pinterest.com/rentspree" class="hi-icon___2hEQV icon-social-pinterest___2frcc socialIcon___3yePd socialPinterest___1q_Ut" data-reactid="217"></a>
+                                        <a id="footerYoutubeBtn" target="_blank" href="https://www.youtube.com/c/rentspree" class="hi-icon___2hEQV icon-social-youtube___32TO0 socialIcon___3yePd socialYoutube___1Yktm" data-reactid="218"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="copyrightPanel___2--Ev" data-reactid="219">
+                    <p class="copyrightText___3JY31" data-reactid="220">
+                        <!-- react-text: 221 -->© All Rights Reserved by RentSpree LLC.
+                        <!-- /react-text --><a id="footerTermsBtn" class="copyrightLink___12Rym" href="/terms-of-use" data-reactid="222">Terms of Use</a><a id="footerPolicyBtn" class="copyrightLink___12Rym" href="/rentspree-privacy-policy" data-reactid="223">Privacy Policy</a>
+                        <!-- react-text: 224 -->      (version: 2.1.1)
+                        <!-- /react-text -->
+                    </p>
+                </section>
+            </div>
+            <div data-reactid="225">
+                <!-- react-empty: 226 -->
+            </div>
+            <div data-reactid="227">
+                <!-- react-empty: 228 -->
+            </div>
+            <div data-reactid="229">
+                <!-- react-empty: 230 -->
+            </div><span data-reactid="231"><button class="btn btn-lg btn-facebook hidden metro" data-reactid="232"><i class="fa fa-facebook" data-reactid="233"></i><!-- react-text: 234 -->Login with Facebook<!-- /react-text --></button><style data-reactid="235">.kep-login-facebook{font-family:Helvetica,sans-serif;font-weight:700;-webkit-font-smoothing:antialiased;color:#fff;cursor:pointer;display:inline-block;font-size:calc(.27548vw + 12.71074px);text-decoration:none;text-transform:uppercase;transition:background-color .3s,border-color .3s;background-color:#4c69ba;border:calc(.06887vw + .67769px) solid #4c69ba;padding:calc(.34435vw + 13.38843px) calc(.34435vw + 18.38843px)}.kep-login-facebook.small{padding:calc(.34435vw + 3.38843px) calc(.34435vw + 8.38843px)}.kep-login-facebook.medium{padding:calc(.34435vw + 8.38843px) calc(.34435vw + 13.38843px)}.kep-login-facebook.metro{border-radius:0}.kep-login-facebook .fa{margin-right:calc(.34435vw + 3.38843px)}</style></span></div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" data-reactid="38"></script>
+    <script charset="UTF-8" data-reactid="39">
+        window.__config = {
+            "env": {
+                "BLOG_URL": "https:\u002F\u002Fwww.rentspree.com\u002Fblog",
+                "SUPPORT_URL": "https:\u002F\u002Fsupport.rentspree.com",
+                "PR_URL": "http:\u002F\u002Fpr.rentspree.com",
+                "DASHBOARD_URL": "https:\u002F\u002Fwww.ladprao21.com\u002Fdashboard",
+                "API": "https:\u002F\u002Fapi.ladprao21.com",
+                "APPLICATION_API": "https:\u002F\u002Fapi.ladprao21.com",
+                "AUTH_API": "https:\u002F\u002Fuser.ladprao21.com",
+                "IMAGE_API": "https:\u002F\u002Fimage.ladprao21.com\u002Fapi\u002Fimage\u002Fget?path=",
+                "GA_KEY": "UA-66400825-3",
+                "MODE": "uat",
+                "OFF_RAVEN": "true",
+                "FACEBOOK_APP_ID": "501555743373823",
+                "GOOGLE_CLIENT_ID": "915182990284-bdhcs2s96pjeof2q9q91kgu01nevea2q.apps.googleusercontent.com",
+                "GOOGLE_TAG_MANAGER_CONTAINER_ID": "GTM-NL74RM",
+                "DISABLE_CONFIRMATION_EMAIL": "true",
+                "MAIN_URL": "https:\u002F\u002Fwww.ladprao21.com",
+                "DOMAIN_NAME": "ladprao21.com",
+                "IS_IE": false
+            }
+        };
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaJWpKBRD633qE1jZ01DR-_oP544xW4HE&amp;libraries=geometry,places,visualization&amp;language=en" data-reactid="40"></script>
+    <script charset="UTF-8" data-reactid="41">
+        window.__data = {
+            "routing": {
+                "locationBeforeTransitions": {
+                    "pathname": "\u002F",
+                    "search": "",
+                    "hash": "",
+                    "state": null,
+                    "action": "POP",
+                    "key": "7zhhn3",
+                    "query": {},
+                    "$searchBase": {
+                        "search": "",
+                        "searchBase": ""
+                    }
+                }
+            },
+            "reduxAsyncConnect": {
+                "loaded": true
+            },
+            "neighbourhoodReducer": {
+                "neighbourhood": null,
+                "fetching": false,
+                "fetchFailed": false,
+                "fetched": false,
+                "posts": null
+            },
+            "citiesReducer": {
+                "cities": [],
+                "fetching": false,
+                "fetchFailed": false
+            },
+            "propertyReducer": {
+                "PropertyReducer": {
+                    "property": null,
+                    "fetching": false,
+                    "fetchFailed": false,
+                    "fetched": false
+                },
+                "PropertyListReducer": {
+                    "propertyList": [],
+                    "propertyCount": 0,
+                    "fetching": false,
+                    "lastFetching": null,
+                    "lastOptionsFetching": null,
+                    "fetchFailed": false,
+                    "fetched": false
+                },
+                "AgencyPropertyListReducer": {
+                    "propertyList": [],
+                    "propertyCount": 0,
+                    "fetching": false,
+                    "fetchFailed": false,
+                    "fetched": false
+                }
+            },
+            "searchHistoryReducer": {},
+            "generalContentReducer": {
+                "post": null,
+                "fetching": false,
+                "fetchFailed": false
+            },
+            "userReducer": {
+                "userRegisterReducer": {
+                    "isRegistering": false,
+                    "isRegistered": false,
+                    "error": null
+                },
+                "userLoginReducer": {
+                    "isLoggingIn": false,
+                    "isLoggedIn": false,
+                    "error": null
+                },
+                "resetPasswordReducer": {
+                    "isRequesting": false,
+                    "isRequested": false
+                },
+                "setPasswordReducer": {
+                    "isSetting": false,
+                    "isSet": false
+                }
+            },
+            "profileReducer": {
+                "profileReducer": {
+                    "isFetched": false,
+                    "isFetching": false,
+                    "isFetchingProfileImage": false,
+                    "isFetchingCoverPhoto": false,
+                    "isUpdating": false,
+                    "isUpdated": false,
+                    "error": null,
+                    "message": null
+                },
+                "profileUsernameReducer": {
+                    "isFetched": false,
+                    "isFetching": false,
+                    "error": null,
+                    "message": ""
+                }
+            },
+            "applicationFormReducer": {
+                "applicationForm": null,
+                "isFetching": false,
+                "isFetched": false,
+                "error": null,
+                "noApplication": false
+            },
+            "creditReportReducer": {
+                "about": null,
+                "exam": null,
+                "payment": null,
+                "isLoading": false,
+                "isLoaded": false,
+                "error": null,
+                "creditReportId": null
+            },
+            "rentalFormReducer": {
+                "rentalForm": {
+                    "current": null,
+                    "current_credit_report": null,
+                    "previous_credit_report": null
+                },
+                "isLoading": false,
+                "isLoaded": false,
+                "noRentalForm": false,
+                "listingId": null
+            },
+            "openHouseReducer": {
+                "isSubmitting": false,
+                "isSubmitted": false,
+                "error": null
+            },
+            "schoolReducer": {
+                "isFetching": false,
+                "isFetched": false,
+                "propertyList": null,
+                "error": null
+            },
+            "modalReducer": {
+                "isShowLogin": false,
+                "isShowRegister": false
+            }
+        };
+    </script>
+    <script type="text/javascript" src="/dist/vendor.bundle-f030a339fb264e97a044.js" data-reactid="42"></script>
+    <script type="text/javascript" src="/dist/main-f030a339fb264e97a044.js" data-reactid="43"></script>
+    <script type="text/javascript" src="https://rentspree.formstack.com/forms/js/lightbox.js" data-reactid="44"></script>
+    <script src="https://use.fontawesome.com/1b50bb5a58.js" data-reactid="45"></script>
+    <script src="/assets/sweetalert/sweetalert.min.js" data-reactid="46"></script>
+    <script type="text/javascript" charset="UTF-8" data-reactid="47">
+        setTimeout(function() {
+            var elmCloudFlare = document.getElementById("cloudflare-old-browser");
+            if (elmCloudFlare) {
+                elmCloudFlare.innerHTML = '<div style="background-image:url(https://s3-us-west-1.amazonaws.com/rentspree/content/statics/benefits-cover-compressor.jpg);background-size:cover;position:fixed;color:#fff;right:0;bottom:0;left:0;text-align:center;z-index:100;top:0;font-size:22px"><div style="width:800px;display:inline-block;background:rgba(255,255,255,.21);border-radius:5px;font-family:Tahoma,Geneva,sans-serif;top:50%;padding:50px 10px;margin-top:80px"><h2>You seem to be using an unsupported browser</h2><p style="font-size:18px;margin-top:20px;margin-bottom:30px">&nbsp; To get the most out of using RentSpree,<br>please continue working using one of the browsers below.</p><div style="display:inherit;font-size:16px"><table><tr><td style="padding:20px"><img width="75" src="https://s3-us-west-1.amazonaws.com/rentspree/content/statics/icon-chrome.png" alt="icon chrome"><p style="margin-top:10px">&nbsp;</p></td><td style="padding:20px"><img width="75" src="https://s3-us-west-1.amazonaws.com/rentspree/content/statics/icon-firefox.png" alt="icon firefox"><p style="margin-top:10px">&nbsp;</p></td><td style="padding:20px"><img width="75" src="https://s3-us-west-1.amazonaws.com/rentspree/content/statics/icon-ie.png" alt="icon ie"><p style="margin-top:10px">IE 10+</p></td><td style="padding:20px"><img width="75" src="https://s3-us-west-1.amazonaws.com/rentspree/content/statics/icon-opera.png" alt="icon opera"><p style="margin-top:10px">&nbsp;</p></td><td style="padding:20px"><img width="75" src="https://s3-us-west-1.amazonaws.com/rentspree/content/statics/icon-safari.png" alt="icon safari"><p style="margin-top:10px">&nbsp;</p></td></tr></table></div><div><a href="http://www.whatbrowser.org/intl/en-us/" target="__blank"><button style="background:#6CA4D2;padding:15px;border-radius:5px;font-size:18px;border:0;color:#fff">More information »</button></a></div></div></div>'
+            }
+        }, 300);
+    </script>
+</body>
+
+</html>
