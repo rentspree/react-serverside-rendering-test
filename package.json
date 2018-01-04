@@ -11,6 +11,7 @@
   "dependencies": {
     "htmlparser2": "^3.9.2",
     "lodash": "^4.17.4",
+    "nfs-config-resolver": "^2.0.4",
     "request": "^2.83.0"
   },
   "devDependencies": {

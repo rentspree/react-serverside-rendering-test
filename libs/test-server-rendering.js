@@ -1,5 +1,7 @@
 const request = require("request")
-const maxTryCount = 15
+const config = require("nfs-config-resolver")()
+const maxTryCount = config.maxTryCount
+const delayTryInterval = config.delayTryInterval
 
 const test = function(url, callback, tryCount = 0) {
   request(url, function(err, response, body) {
@@ -23,7 +25,7 @@ const tryAgain = function(url, callback, responseObject, tryCount) {
   }
   setTimeout(() => {
     test(url, callback, tryCount + 1)
-  }, 500)
+  }, delayTryInterval)
 }
 
 module.exports = test
