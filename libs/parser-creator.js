@@ -15,6 +15,9 @@ const parserCreator = function(callback) {
 		if (contentElement && contentElement.children && contentElement.children.length > 0 ) {
 			callback(true)
 		} else {
+		  if (contentElement) {
+		    callback(false, domUtils.getOuterHTML(contentElement))
+      }
 			callback(false)
 		}
 	})

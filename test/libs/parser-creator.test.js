@@ -30,4 +30,12 @@ describe("parser module", function() {
     parser.end()
     spy.calledWith(false).should.be.true
   })
+  it("should return html when fail", () => {
+    const spy = sinon.spy()
+    const parser = parserCreator(spy)
+    const html = fs.readFileSync(path.join(__dirname, "../fixtures/fail.html"), "utf8")
+    parser.write(html)
+    parser.end()
+    spy.calledWith(false, "<div id=\"content\" data-reactid=\"14\"></div>").should.be.true
+  })
 })
