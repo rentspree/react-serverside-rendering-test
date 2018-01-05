@@ -30,7 +30,7 @@ describe("test-server-rendering", function () {
     setTimeout(() => {
       server.get("/not-ready")
         .reply(200, "response")
-    }, 3123)
+    }, 1000)
     testServerRender("http://testme.com/not-ready", function(err, response, result) {
       response.statusCode.should.equal(200)
       done()
