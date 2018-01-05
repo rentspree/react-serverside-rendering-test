@@ -14,6 +14,10 @@ const parser = parserCreator(function(result, dom) {
 })
 
 test(config.testURL, function(err, response, body) {
+  if (err) {
+    console.error("Error fetching server with config", config)
+    process.exit(1)
+  }
   if (response && response.statusCode === 200) {
     parser.write(body)
     parser.end()
